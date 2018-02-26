@@ -1,71 +1,216 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>kinobase</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<header>
-		<span class="nameplate">kinobase<sup>.ru</sup></span>
-		<span class="nameplate-2">Открой мир кино с нами</span>
-		<nav>
-			<ul class="menu">
-				<li><a href="">кино</a></li>
-				<li><a href="">сериалы</a></li>
-				<li><a href="">афиша</a></li>
-				<li><a href="">тексты</a></li>
-				<li><a href="">рейтинги</a></li>
-				<li><a href="">программы и шоу</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<div class="strip-1">
-			<div class="container-enter">
-				<ul class="enter">
-					<li><a href="" class="border-a">Создать аккаунт</a></li>
-					<li><a href="">Войти</a></li>
-				</ul>
-			</div>
-			<div class="container-search">
-				<form>
-					<label><span class="search">Поиск</span><input class="input" type="text" name="film" placeholder="     Что будем искать)"></label>
-				</form>
-			</div>
-			<div><img src="images/corner_bottom.png" class="corner-bot"></div>
-			<div><img src="images/big_corner_bottom.png" class="corner-big"></div>
-			<div><img src="images/corner_search.png" class="corner-search"></div>
-		</div>
-	</section>
-	<section>
-		<div class="strip-2">
-			<div class="container-rating"><p class="rating">Рейтинг ожиданий</p></div>
-		</div>
-	</section>
-	<section>
-		<div class="strip-3"></div>
-		<div class="container-for-poster">
-			<div class="poster"></div>
-			<div class="container-item">
-				<!--<div class="">
-					<p class="text-mad text-mad-2">Мадагаскар 3</p>
-					<p class="text-mad">Madagascar 3: Europe's Most Wanted </p>
-				</div>-->
-				<p class="container-item-text">Бегемотиха Глория, жираф Мелман, зебра Марти и, конечно, лев Алекс решают вернуться в Нью-Йорк после их побега в Африку. Из-за механических иноваций пресловутого шимпанзе и сумашедших пингвинов весь план рушится.</p>
-				<div class="top-right-corner"><img src="images/corner_bottom.png"></div>
-				<div class="midlle-left-corner"><img src="images/corner_bottom.png"></div>
-			</div>
-			<div class="triple-poster">
-				<div class="smll-image"><img src="images/madagaskar_1.png"></div>
-				<div class="smll-image"><img src="images/madagaskar_2.png"></div>
-				<div class="smll-image"><img src="images/madagaskar_3.png"></div>
-			</div>
-			<div><img src="images/big_corner_2.png" class="corner-short"></div>
-		</div>
-		<div class="strip-4"></div>
-	</section>
-	<main><p class="text-wish">Пусть к вам проникнет наше настроение и останется только хорошее впечатление! <span class="bold">Наслаждайтесь просмотр...</span></p></main>	
-</body>
-</html>
+body {
+	margin: 0;											
+	padding: 0;
+	background: #dedede;
+}
+header {
+	background: #222222;
+}
+header::after {							/*clearfix для header*/
+    content: "";
+    display: table;
+    clear: both;
+ }
+.nameplate {							/*шильдик kinobase.ru*/
+	float: left;
+	font: bold 1.5em Tahoma, sans-serif;
+	color: grey;
+	padding: 10px 20px;
+	margin-left: 10%;
+}
+.nameplate-2 {							/*шильдик "Открой мир кино с нами"*/
+	font: .75em Tahoma, sans-serif;
+	color: grey;
+	padding: 10px 20px;
+	position: relative;
+	top: 20px;
+}
+.menu {									/*главное меню сайта*/
+	float: right;
+    list-style-type: none;
+    margin: -1.5% 10% 0 0;
+    padding: 0;
+}
+.menu li {
+	display: inline-block;
+	margin-left: -4px;
+    border-left: 1px solid rgba(255,255,255,.2);
+}
+.menu li:last-child {
+    border-right: 1px solid rgba(255,255,255,.2);
+}
+.menu a {								/*оформление главменю сайта*/
+	box-sizing: border-box;
+	display: inline-block;
+	text-decoration: none;
+	color: grey;
+	font: 1em Tahoma, sans-serif;
+	padding: 15px 15px;
+	width: 100%;
+    opacity: .75;
+    transition: opacity 1s, background 1s;
+}
+.menu a:hover {							/*подсветка главменю*/
+    opacity: 1;
+    background: rgba(255,255,255,.15);
+}
+.strip-1 {
+	position: relative;					/*синяя полоса*/
+	background: #1850a6;
+	height: 50px;
+}
+.container-enter {						/*вход/регистрация*/
+	position: absolute;
+	left: 10%;
+}
+.enter {								
+	list-style-type: none;
+	margin-top: 0.625em;
+}
+.enter li {								
+	display: inline-block;
+}
+.enter a {								
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black;
+	font: 1.2em serif;
+	color: white;
+	padding: 0 10px;
+}
+.border-a {								/*разделитель для вход/регистрация*/
+	border-right: 3px solid white;
+}
+.container-search {
+	position: absolute;
+	right: 13%;
+	top: 50%;
+	margin-top: -0.625em;
+	width: 40%;
+}
+.search {
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	padding: 15px;
+}
+.input {
+	width: 450px;
+}
+.corner-bot {
+	position: absolute;
+	top: 23px;
+	left: 11%;
+}
+.corner-big {
+	position: absolute;
+	top: 3px;
+	left: 49%;
+}
+.corner-search {
+	position: absolute;
+	right: 12%;
+	top: -20px;
+}
+.strip-2 {								/*серая полоса*/
+	background: #dfdfdf;
+	height: 35px;
+}
+.container-rating {
+	margin-top: 10px;
+	margin-left: 19%;
+}
+.rating {
+	color: rgb(192,192,192);
+	/*text-shadow: 0 0 2px rgba(0,0,0,0.9);*/
+	font: bold 1.5em sans-serif;
+	margin: 0;
+}
+.strip-3 {								/*верхня полоса с тенью*/
+	background: #cccccc;
+	box-shadow: inset 0 0 3px;
+	border-top: 1px solid grey;
+	height: 7px;
+}
+.container-for-poster {					/*контейнер для карусели?*/
+	position: relative;
+	width: 100%;
+	height: 350px;
+}
+.poster {								/*большой постер к мадагаскару*/											
+	background-image: url(../images/madagaskar-cut.png);
+	width: 100%;
+	height: 350px;
+}
+.top-right-corner {						
+	position: absolute;
+	right: 12%;
+	top: -10%;
+	transform: rotate(180deg);
+}
+.midlle-left-corner {
+	transform: rotate(90deg);
+	right: 93%;
+	top: 53%;
+	position: absolute;
+}
+.container-item {
+	display: flex;						/*полупрозрачный блок с анотацией к мадагаскару*/
+	position: absolute;
+	right: 150px; 
+	top: 20px; 
+	background-color: rgba(0, 0, 0, .75);
+	width: 400px;
+	height: 250px;
+	border-radius: 15px;
+	align-items: flex-end;
+}
+.container-item-text {
+	font: bold;					/*оформление анотации к мадагаскару*/
+	color: white;
+	margin: 0;
+	line-height: 1;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	hyphens: auto; 
+}
+.text-mad {
+	/*position: absolute;*/
+	color: white;
+	top: 1%;
+	left: 2%;
+	line-height: .1;
+}
+.text-mad-2 {
+	font: bold 1.5em;
+}
+.triple-poster {						/*блок с мелкими постерами*/
+	position: absolute;
+	height: 50px;
+	width: 400px;
+	right: 150px;
+	bottom: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+.smll-image {							/*размер и рамка для мелких постеров*/
+	width: 93px;
+	height: 42px;
+	border: 1px solid white;
+}
+.corner-short {
+	position: absolute;
+	left: 16%;
+	bottom: -4%;
+}
+.strip-4 {								/*нижняя полоса c тенью*/
+	background: #cccccc;
+	box-shadow: inset 0 0 3px;
+	border-top: 1px solid grey;
+	height: 7px;
+}
+.text-wish {
+	text-align: center;
+	font: 1.5em Tahoma, sans-serif;
+}
+.bold {
+	font-weight: bold;
+}
