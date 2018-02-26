@@ -120,7 +120,7 @@ header::after {							/*clearfix для header*/
 }
 .rating {
 	color: rgb(192,192,192);
-	/*text-shadow: 0 0 2px rgba(0,0,0,0.9);*/
+	text-shadow: 0 0 2px rgba(0,0,0,0.9);
 	font: bold 1.5em sans-serif;
 	margin: 0;
 }
@@ -178,6 +178,34 @@ header::after {							/*clearfix для header*/
 	top: 1%;
 	left: 2%;
 	line-height: .1;
+}
+.block-info {
+	position: absolute;
+	display: flex;
+	width: 400px;
+	height: 120px;
+	top: 19%;
+	align-items: center;
+}
+.date {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+}
+.zero-bg {
+	background-image: repeating-linear-gradient(to bottom, white 35px, grey);
+	width: 40px;
+	height: 70px;
+	border-radius: 5%;
+	margin-left: 10px;
+}
+.date-tx {
+	font: 46pt Tahoma, sans-serif;
+	line-height: 70px;
+	margin-left: 2px;
+}
+.seven-bg {
+	margin-left: 5px;
 }
 .triple-poster {						/*блок с мелкими постерами*/
 	position: absolute;
