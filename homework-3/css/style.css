@@ -173,14 +173,11 @@ header::after {							/*clearfix для header*/
 	hyphens: auto; 
 }
 .text-mad {
-	/*position: absolute;*/
+	position: absolute;
 	color: white;
 	top: 1%;
 	left: 2%;
 	line-height: .1;
-}
-.text-mad-2 {
-	font: bold 1.5em;
 }
 .triple-poster {						/*блок с мелкими постерами*/
 	position: absolute;
