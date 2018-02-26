@@ -1,0 +1,71 @@
+table {
+	width: 75%;
+	border-collapse: collapse;
+	margin-bottom: 25px;
+	}
+caption {
+	caption-side: top;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #000000;
+	}
+tr {
+	text-align: center;
+	background: #E0FFFF;
+	}
+th {
+	border: 2px solid;
+	padding: 5px;
+	}
+td {
+	border: 2px solid;
+	padding: 5px;
+	}
+.mask1 {
+	background: #FFDAB9;
+	}
+form {
+	width: 50%;
+	}
+.text {
+	color: teal;
+	font-size: 2em;
+	font-style: italic;
+	background-color: #F0E68C;
+	}
+a:visited {
+	color: purple;
+		}
+.image {
+	width: 60%; height: 60%;
+	margin: 25px 10px;
+	}
+nav>a[href^="https"] {
+	text-decoration: none;
+	display: inline-block;
+	background: #ADD8E6;
+	margin: 5px 0;
+	padding: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 10px;
+	font-family: Tahoma, sans-serif;
+	width: 10%;
+	}
+[target] {
+	text-decoration: none;
+	display: inline-block;
+	background: #DC143C;
+	margin: 5px 0;
+	padding: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 10px;
+	font-family: Tahoma, sans-serif;
+	width: 15%;
+	color: white;
+	font-weight: bold;
+	}
+[target]:visited {
+	color: white;
+	}
