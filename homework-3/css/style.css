@@ -80,7 +80,7 @@ header::after {							/*clearfix для header*/
 .border-a {								/*разделитель для вход/регистрация*/
 	border-right: 3px solid white;
 }
-.container-search {
+.container-search {						/*поле для поиска*/
 	position: absolute;
 	right: 13%;
 	top: 50%;
@@ -95,17 +95,17 @@ header::after {							/*clearfix для header*/
 .input {
 	width: 450px;
 }
-.corner-bot {
+.corner-bot {							/*уголок слева от входа*/
 	position: absolute;
 	top: 23px;
 	left: 11%;
 }
-.corner-big {
+.corner-big {							/*большой уголок слева от поиска*/
 	position: absolute;
 	top: 3px;
 	left: 49%;
 }
-.corner-search {
+.corner-search {						/*уголок с лупой справа от поиска*/
 	position: absolute;
 	right: 12%;
 	top: -20px;
@@ -114,7 +114,7 @@ header::after {							/*clearfix для header*/
 	background: #dfdfdf;
 	height: 35px;
 }
-.container-rating {
+.container-rating {						/*текст - рейтинг ожиданий*/
 	margin-top: 10px;
 	margin-left: 19%;
 }
@@ -130,7 +130,7 @@ header::after {							/*clearfix для header*/
 	border-top: 1px solid grey;
 	height: 7px;
 }
-.container-for-poster {					/*контейнер для карусели?*/
+.container-for-poster {					/*контейнер для большого постера к мадагаскару*/
 	position: relative;
 	width: 100%;
 	height: 350px;
@@ -140,13 +140,13 @@ header::after {							/*clearfix для header*/
 	width: 100%;
 	height: 350px;
 }
-.top-right-corner {						
+.top-right-corner {						/*верхний уголок блока с анотацией*/					
 	position: absolute;
 	right: 12%;
 	top: -10%;
 	transform: rotate(180deg);
 }
-.midlle-left-corner {
+.midlle-left-corner {					/*боковой уголок блока с анотацией*/
 	transform: rotate(90deg);
 	right: 93%;
 	top: 53%;
@@ -164,7 +164,7 @@ header::after {							/*clearfix для header*/
 	align-items: flex-end;
 }
 .container-item-text {
-	font: bold;					/*оформление анотации к мадагаскару*/
+	font: bold;							/*оформление анотации к мадагаскару*/
 	color: white;
 	margin: 0;
 	line-height: 1;
@@ -172,40 +172,48 @@ header::after {							/*clearfix для header*/
 	padding-bottom: 5px;
 	hyphens: auto; 
 }
-.text-mad {
+.text-mad {								/*верхний текст в блоке с анотацией*/
 	position: absolute;
 	color: white;
 	top: 1%;
 	left: 2%;
 	line-height: .1;
 }
-.block-info {
+.block-info {							/*блок с датой и рейтингом*/
 	position: absolute;
 	display: flex;
 	width: 400px;
 	height: 120px;
 	top: 19%;
 	align-items: center;
+	justify-content: flex-start;
 }
-.date {
-	position: absolute;
+.block-info p{
+	color: white;
+	margin: 0;
+}
+.date {									/*контейнер для даты*/
 	display: flex;
 	justify-content: space-between;
+	margin: 0 10px 0 10px;
 }
-.zero-bg {
+.zero-bg {								/*оформление фона даты*/
 	background-image: repeating-linear-gradient(to bottom, white 35px, grey);
 	width: 40px;
 	height: 70px;
-	border-radius: 5%;
-	margin-left: 10px;
+	border-radius: 5%;	
 }
-.date-tx {
+.date-tx {								/*оформление цифры даты*/					
 	font: 46pt Tahoma, sans-serif;
 	line-height: 70px;
 	margin-left: 2px;
 }
 .seven-bg {
 	margin-left: 5px;
+}
+.tx-bold {									/*жирный текст*/
+	font-size: x-large;
+	font-weight: bold;
 }
 .triple-poster {						/*блок с мелкими постерами*/
 	position: absolute;
@@ -216,12 +224,12 @@ header::after {							/*clearfix для header*/
 	display: flex;
 	justify-content: space-around;
 }
-.smll-image {							/*размер и рамка для мелких постеров*/
+.triple-poster img {							/*размер и рамка для мелких постеров*/
 	width: 93px;
 	height: 42px;
 	border: 1px solid white;
 }
-.corner-short {
+.corner-short {							/*растянутый уголок*/
 	position: absolute;
 	left: 16%;
 	bottom: -4%;
@@ -232,10 +240,7 @@ header::after {							/*clearfix для header*/
 	border-top: 1px solid grey;
 	height: 7px;
 }
-.text-wish {
+.text-wish {							/*текст пожелание*/
 	text-align: center;
 	font: 1.5em Tahoma, sans-serif;
-}
-.bold {
-	font-weight: bold;
 }
