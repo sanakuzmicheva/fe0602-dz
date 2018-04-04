@@ -1,0 +1,81 @@
+@bg-color-main: #F5DEB3;
+
+.page_style {
+  background-color: @bg-color-main;
+  font-family: sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.box {
+  background: #BC8F8F;
+  width: 40%;
+  border: 25px solid #BC8F8F;
+  border-radius: 25px;
+}
+
+[href^="#"]:link {
+  color: #008080;
+}
+
+[href^="#"]:visited {
+  color: #4B0082;
+}
+
+[href^="#"]:active {
+  font-weight: bold;
+  color: #008080;
+}
+
+*[id]+p::first-letter {
+  color:;
+  font-size: 2em;
+}
+
+h4::before, h4::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin:0 5px;
+  background: #2E8B57;
+}
+
+.pfirst {
+  font-family: "Arial";
+  font-size: 1.5em;
+  background: white;
+  padding: 5px;
+  font-style: italic;
+}
+
+p>mark {
+  color: #800080;
+  background: orange;
+  font-weight: bold;
+}
+
+[href*="https"]:link {
+  text-decoration: underline wavy;
+  color: #32CD32;
+}
+
+[href*="https"]:visited {
+  color: #006400;
+}
+
+[href*="https"]:hover {
+  font-size: 1.5em;
+}
+
+.list {
+  list-style-type: none;
+}
+
+[href*="kramola"]::before {
+  content:"⇛";
+  margin: 0 5px;
+  color: #4682B4;
+  text-decoration: none;
+}
+

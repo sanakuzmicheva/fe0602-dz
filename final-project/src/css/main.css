@@ -1,0 +1,160 @@
+body {
+	background: lightgrey;
+}
+
+.top-area {
+	width: auto;
+	height: 50px;
+	background: rgba(4, 60, 107, 1);
+}
+
+.search-bar {
+	width: auto;
+	height: 70px;
+	background: rgba(37, 84, 123, 1);
+	display: flex;
+	align-items: center;
+}
+
+.search-bar form {
+	width: 100%;
+}
+
+.search-bar input {
+	width: 60%;
+	height: 40px;
+	border: none;
+	margin-left: 20%;
+}
+
+.search-button {
+	background: rgb(255, 76, 0);
+	opacity: .9;
+	color: rgb(255, 255, 255);
+	width: 10%;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	margin: 0 10px 0 10px;
+}
+
+.hover-button:hover {
+	opacity: 1;
+}
+
+/*.adv-search {
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	margin-right: 30px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+	text-align: center;
+	padding-top: 7px;
+}
+
+.adv-search:hover {
+	border-color: rgba(255, 255, 255, 1);
+}*/
+
+.menu-bar {
+	width: auto;
+	height: 40px;
+	background: rgba(255, 255, 255, 1);
+}
+
+.menu {
+	
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu a {
+	padding: 10px 15px;
+	font: normal 1em Arial, sans-serif;
+	color: black;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.side-menu {
+	display: inline-block;
+	width: 20%;
+	height: 300px;
+	background: #FFDD73;
+	float: left;
+	margin-left: 2%;
+}
+ 
+.side-menu li {
+	list-style-type: none;
+}
+
+.items-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.items-list > figure {
+	position: relative;
+	width: 20%;
+	margin: 0;
+	min-width: 250px;
+	margin-bottom: 10px;
+}
+
+.image {
+	width: 50%;
+	height: 200px;
+}
+
+.name {
+
+}
+
+.price {
+	color: rgb(255, 20, 147);
+	font-weight: bolder;
+}
+
+.add-button {
+	width: 50%;
+	background: rgb(255, 192, 0);
+	color: rgb(255, 255, 255);
+	opacity: .9;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.footer {
+	width: auto;
+	height: 250px;
+	background: rgb(4, 60, 107);
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding-top: 45px;
+}
+
+.footer li {
+	list-style-type: none;
+	margin: 15px;
+}
+
+.footer a {
+	color: rgb(255, 255, 255);
+	padding: 15px;
+}
+
+.footer a:hover {
+	color: rgb(255, 255, 255);
+	text-decoration-line: none;
+}

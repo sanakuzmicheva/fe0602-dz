@@ -4,24 +4,148 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bookstory</title>
+	<link rel="stylesheet" type="text/css" href="src/css/main.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li><a href="">Bestsellers</a></li>
-				<li><a href="">Coming Soon</a></li>
-				<li><a href="">Recommended</a></li>
-				<li><a href="">Sale</a></li>
-			</ul>
-		</nav>
+		<!--top area-->
+		<div class="top-area"></div>
+		<div class="search-bar">
+			<form>
+				<input type="text" name="search" placeholder="">
+				<button type="submit" class="search-button hover-button">Search</button>
+			</form>
+		</div>
+		<div class="menu-bar">
+			<nav>
+				<ul class="menu">
+					<li><a href="">Bestsellers</a></li>
+					<li><a href="">Coming Soon</a></li>
+					<li><a href="">Recommended</a></li>
+					<li><a href="">Sale</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
-		<section></section>
-		<section></section>
+		<section>
+			<aside>
+				<div class="side-menu">
+					<ul>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</aside>
+		</section>
+		<section>
+			<div class="items-list">
+				<figure>
+					<img src="src/img/ducket-html-css.jpg" alt="error" class="image">
+					<figcaption>
+						<span class="name">HTML and CSS: Design and Build Websites</span>
+						<div class="price">23.68 $</div>
+						<button type="button" class="add-button hover-button">Add to cart</button>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="src/img/freeman-ang.jpg" alt="error" class="image">
+					<figcaption>
+						<span class="name">Essential Angular for ASP.NET Core MVC</span>
+						<div class="price">28.49 $</div>
+						<button type="button" class="add-button hover-button" class="image">Add to cart</button>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="src/img/nixon-php.jpg" alt="error" class="image">
+					<figcaption>
+						<span class="name">Learning PHP, MySQL & JavaScript</span>
+						<div class="price">35.80 $</div>
+						<button type="button" class="add-button hover-button" class="image">Add to cart</button>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="src/img/mcfarland-css.jpg" alt="error" class="image">
+					<figcaption>
+						<span class="name">CSS: The Missing Manual.</span>
+						<div class="price">29.63 $</div>
+						<button type="button" class="add-button hover-button">Add to cart</button>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="src/img/head-css.jpg" alt="error" class="image">
+					<figcaption>
+						<span class="name">A Pocket Guide to CSS Animations.</span>
+						<div class="price">2.99 $</div>
+						<button type="button" class="add-button hover-button">Add to cart</button>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="src/img/forbes-boot.jpg" alt="error" class="image">
+					<figcaption>
+						<span class="name">The Joy of Bootstrap: A smarter way to learn the world's most popular web framework.</span>
+						<div class="price">14.95 $</div>
+						<button type="button" class="add-button hover-button" class="image">Add to cart</button>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="src/img/fender-front.jpg" alt="error" class="image">
+					<figcaption>
+						<span class="name">Front-End Fundamentals: A practical guide to front-end web development. </span>
+						<div class="price">19,99 $</div>
+						<button type="button" class="add-button hover-button" class="image">Add to cart</button>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="src/img/cameron-hjj.jpg" alt="error" class="image">
+					<figcaption>
+						<span class="name">HTML5, JavaScript & JQuery</span>
+						<div class="price">9,99 $</div>
+						<button type="button" class="add-button hover-button">Add to cart</button>
+					</figcaption>
+				</figure>
+			</div>
+		</section>
 		<section></section>
 		<section></section>
 	</main>
-	<footer></footer>
+	<footer>
+		<div class="footer">
+			<ul>
+				<li><a href="">About us</a></li>
+				<li><a href="">Sitemap</a></li>
+				<li><a href="">Bookmarks</a></li>
+				<li><a href="">Sign in/Join</a></li>
+			</ul>
+			<ul>
+				<li><a href="">Help</a></li>
+				<li><a href="">Contact us</a></li>
+				<li><a href="">Where's my stuff?</a></li>
+				<li><a href="">Where do you deliver?</a></li>
+			</ul>
+			<ul>
+				<li><a href="">Affiliates</a></li>
+				<li><a href="">Jobs</a></li>
+			</ul>
+			<ul>
+				<li><a href="">Cookies</a></li>
+				<li><a href="">Privacy policy</a></li>
+				<li><a href="">Terms & Conditions</a></li>
+				<li><a href="">Accessibility</a></li>
+			</ul>
+		</div>
+	</footer>
+	<script type="text/javascript" src="src/js/main.js" async defer></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
